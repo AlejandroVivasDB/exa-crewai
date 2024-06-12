@@ -6,7 +6,7 @@ research_task:
     Follow these rules:
     - Only include articles that are especially relevant to {topic}. Do not include any news that are not directly related to {topic}. 
     - Do not include sources that are not a news article. If the content of the page includes a list of articles or looks like the front page of a website, do not include it in the list!
-    - Summarize the news in a few sentences. Make the summary as long as necessary to include all the relevant information, but not too long for a newsletter.
+    - Make the summary as long as necessary to include all the relevant information, but not too long for a newsletter.
     - Include the URL of the article where you found the news.
     - Include a minimum of 7 news articles and a maximum of 10 news articles in the list.
     - When using the Search Tool, your search query should be concise (for example, "latest news on {topic}").
@@ -28,6 +28,21 @@ research_task:
       - **URL:** [Nature Article](https://www.nature.com/articles/d41586-024-01125-1)
     </EXAMPLE>
 
+image_search_task:
+  description: >
+    For each news article found in the research task, find a relevant image that can be included in the newsletter. The image should be relevant to the topic of the news article and suitable for use in a professional newsletter.
+
+    Follow these rules:
+    - Use reliable sources for finding images.
+    - Make sure the image is of high quality and relevant to the news article.
+    - Provide the URL of the image along with a brief description of why it is relevant to the news article.
+
+  expected_output: >
+    A markdown document listing the images found for each news article. Each entry should contain the following:
+    - Title of the news
+    - URL of the image
+    - Brief description of why the image is relevant to the news article
+    
 edit_task:
   description: >
     Given the list of news articles that will be used in the newsletter, do the following things:

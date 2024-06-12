@@ -1,7 +1,9 @@
 from crewai_tools import BaseTool
+from dotenv import load_dotenv
 from exa_py import Exa
 import os
 from datetime import datetime, timedelta
+load_dotenv()
 
 
 class SearchAndContents(BaseTool):

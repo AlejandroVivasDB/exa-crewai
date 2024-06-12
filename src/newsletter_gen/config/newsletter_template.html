@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weekly Newsletter</title>
+    <title>Weekly Newsletter - Dualboot Partners</title>
     <style>
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -17,18 +17,46 @@
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
-        h1, h2 {
-            color: #333;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
         }
-        h1 {
+        .header .date {
+            font-size: 1em;
+            font-family: Inter;
+            margin-right: 10px;
+        }
+        .header .newsletter-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .main-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #286aa6;
+            border-radius: 0 0 5px 5px;
+        }
+        .main-title h1 {
+            font-size: 3em;
+            margin: 0 auto;
             text-align: center;
-            margin-bottom: 20px;
+            flex: 1;
+        }
+        .main-title img {
+            height: 60px;
+            margin-left: 20px;
         }
         h2 {
             margin: 0;
+            color: #fff;
         }
         p {
-            color: #666;
+            color: #fff;
             line-height: 1.5;
         }
         ul {
@@ -37,13 +65,20 @@
         }
         li {
             margin-bottom: 20px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
         }
         .read-more {
             margin-top: 10px;
             font-size: 14px;
         }
         .read-more a {
-            color: #0066cc;
+            color: #4b8bf4;
             text-decoration: none;
         }
         .read-more a:hover {
@@ -54,27 +89,76 @@
             margin-top: 30px;
             color: #666;
         }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 200px;
+        }
+        .db-color {
+            color: #286aa6;
+        }
+        .article-image {
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
+            border-radius: 5px;
+        }
+        .article-content {
+            flex: 1;
+        }
+        .article-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .article-description {
+            margin-bottom: 10px;
+        }
+        .article-row {
+            background-color: #212121;
+        }
+        .article-details {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .article-row:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .article-row:nth-child(odd) {
+            flex-direction: row;
+        }
+        .logo {
+            max-width: 350px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1><!-- TITLE OF THE DAY --></h1>
+        <div class="header">
+            <img class="logo" src="./assets/dualbootBigLogo.png" alt="Dual Boot Partners Logo">
+            <div class="db-color" class="date">June 2024</div>
+        </div>
+        <div class="main-title">
+            <h1><!-- TITLE OF THE DAY --></h1>
+        </div>
         <p><!-- PERSONAL MESSAGE --></p>
         <ul>
-            <li>
-                <h2><!-- TITLE OF THE STORY --></h2>
-                <p><!-- SUMMARY OF THE STORY --></p>
-                <p><!-- WHY THIS IS IMPORTANT --></p>
-                <div class="read-more">
-                    <p>Read more:</p>
-                    <ul>
-                        <li><a href="https://www.example.com"><!-- LINK 1 --></a>
-                        <li><a href="https://www.example2.com"><!-- LINK 2 --></a>
-                    </ul>
+            <li class="article-row">
+                <img src="https://via.placeholder.com/150" alt="Article Image" class="article-image">
+                <div class="article-content">
+                    <h2 class="article-title"><!-- TITLE OF THE STORY --></h2>
+                    <p class="article-description"><!-- SUMMARY OF THE STORY --></p>
+                    <p class="article-description"><!-- WHY THIS IS IMPORTANT --></p>
+                    <div class="read-more">
+                        <p>Read more:</p>
+                        <ul>
+                            <li><a href="https://www.example.com"><!-- LINK 1 --></a></li>
+                        </ul>
+                    </div>
                 </div>
             </li>
-
-            <!-- ADD ALL THE OTHER NEWS ITEMS HERE USING THE SAME FORMAT AS THE EXAPLE ABOVE -->
+            <!-- ADD ALL THE OTHER NEWS ITEMS HERE USING THE SAME FORMAT AS THE EXAMPLE ABOVE -->
         </ul>
         <p class="goodbye">Goodbye and see you tomorrow!</p>
     </div>
